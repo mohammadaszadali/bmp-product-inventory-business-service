@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dtag.bm.service.product.inventory.service</groupId>
 	<artifactId>bmp-product-inventory-business-service</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>bmp-product-inventory-business-service</name>
 	<description>Product Inventory Business Service</description>
 	<properties>
