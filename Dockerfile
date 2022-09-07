@@ -3,7 +3,7 @@ FROM alpine/git as repo
 WORKDIR apps/
 ARG username=mohammadaszad
 ARG password=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
-RUN git clone --branch development https://$username:$password@https://github.com/mohammadaszadali/bmp-product-inventory-business-service.git
+RUN git clone --branch development https://$username:$password@github.com/mohammadaszadali/bmp-product-inventory-business-service.git
 #STAGE 2
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR apps/
