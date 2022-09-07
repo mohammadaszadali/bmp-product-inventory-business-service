@@ -1,9 +1,10 @@
 # STAGE 1
 FROM alpine/git as repo
 WORKDIR apps/
-ARG username=mohammadaszad
-ARG password=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
-RUN git clone https://$username:$password@github.com/mohammadaszadali/bmp-product-inventory-business-service.git
+ENV username=mohammadaszad
+ENV password=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
+ENV https://github.com/mohammadaszadali/bmp-product-inventory-business-service.git
+RUN git clone https://$username:$password@$GIT_REPOSITORY
 #STAGE 2
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR apps/
