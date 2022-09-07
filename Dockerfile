@@ -3,7 +3,6 @@ FROM alpine/git as repo
 WORKDIR apps/
 ENV username
 ENV password
-ENV GIT_REPOSITORY
 RUN git clone https://${username}:{$password}@github.com/mohammadaszadali/bmp-product-inventory-business-service.git
 #STAGE 2
 FROM maven:3.5-jdk-8-alpine as build
