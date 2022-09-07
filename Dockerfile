@@ -8,7 +8,7 @@ RUN pwd && ls -latr
 #STAGE 2
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR apps/
-COPY --from=repo /apps/bmp-product-inventory-business-service apps/bmp-product-inventory-business-service
+COPY --from=repo /apps/bmp-product-inventory-business-service apps/bmp-product-inventory-business-service apps/
 RUN  pwd && ls -latr && cd apps/ && mvn clean install
 #STAGE 3
 FROM openjdk:8
