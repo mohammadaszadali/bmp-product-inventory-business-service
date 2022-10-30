@@ -29,6 +29,6 @@ spring:
     data:
         mongodb:
             database: BMP_PRODUCT_1
-            host: 10.0.5.36
+            host: 18.220.215.236
             port: 27017
 timeZone: UTC
